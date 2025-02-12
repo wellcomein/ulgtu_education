@@ -1,10 +1,54 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Название страницы</title>
+    <title>Форма для входа</title>
+    <style>
+      body{
+        background: #f5f4f1;
+      }
+      h1 {
+        text-align: center;
+      }
+      form {
+        background: #ffffff;            /* Цвет фона белый */
+        display: grid;                    /* Расположить вертикально */
+        width: 50%;                       /* Ширина формы */
+        box-shadow: 0 0 7px #00000080;  /* Тень от рамки */
+        padding: 3%;                      /*  Расстояние между контентом и рамкой */
+        margin: auto;                     /* Выравниваем по центру */
+      }
+      .field {
+        padding: 5px;                     /* Расстояние до текста внутри */
+        border: 1px solid #dddddd;
+        margin-top: 1rem;
+      }
+      .checkbox {
+        text-align: right;
+        font-style: italic;
+        margin: 1rem 0;
+      }
+      .button {
+        background: #b59063;
+        color: #ffffff;
+        border: none;
+        padding: 10px;
+      }
+    </style>
   </head>
 <body>
-  <h1>Это заголовок</h1>
-  <p>Это абзац.</p>
+  <form action="" method="get" class="form-example">
+    <h1>Добро пожаловать!</h1>
+
+    <input class="field" type="text" name="name", placeholder="Логин"/>
+      
+    <input class="field" type="password" name="password", placeholder="Пароль">
+
+    <label class="checkbox">
+      <input type="checkbox" name="Запомнить меня" id="remember" checked>
+      Запомнить меня
+    </label>
+
+    <button class="button">Войти</button>
+  </form>
 </body>
 </html>
