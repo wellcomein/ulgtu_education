@@ -18,7 +18,7 @@
                 color: #777;
                 font-size: 0.8em;
                 text-align: center;
-                margin: 7pt auto;
+                margin: 7pt auto 7pt;
                 padding: 0px 20px;
             }
             h2.content {
@@ -26,10 +26,16 @@
                 color: #333;
                 font-size: 1.5em;
             }
+            h2::after{
+                content: "\A \2022  \2022  \2022";
+                color: #eb6d54;
+                white-space: pre;
+            }
             .dotted {
-                width: 30px;
-                margin: 5pt auto;
-                border-bottom: 5px dotted #eb6d54;
+                color: #eb6d54;
+                font-size: 130%;
+                margin-top: 0;
+                margin-bottom: 10px;
             }
             button.content {
                 background: #eb6d54;
@@ -44,7 +50,6 @@
         <div>
             <img    src="https://webref.ru/example/image/landscape.jpg" alt="Nature" width="300">
             <h2     class="content">Туристический цикл</h1>
-            <p      class="dotted"></p>
             <p      class="content">Большая часть территории однородно вызывает закрытый аквапарк.</p>
             <button class="content">Подробнее</button>
         </div>
